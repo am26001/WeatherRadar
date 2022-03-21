@@ -4,4 +4,4 @@ WeatherRadar Repository that does the following:
 
 This repository tracks the versions of the WeatherRadar application. Dev Team 4 will use this for Software Configuration Management and Version Control.
 
-To access the appplication, click [here.](https://am26001.github.io/WeatherRadar/Pages/index.html)
+To access the appplication, click [here.](https://am26001.github.io/WeatherRadar/HTML/index.html)
