@@ -3,75 +3,101 @@
 <meta charset=UTF-8”>
 
 <head>
-  <title>Menu</title>
+  <title>Rate Our App</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="../CSS/myApp.css">
-  <script src="main.js"></script>
+  <!-- CSS Reference !-->
+  <link rel="stylesheet" href="myApp.css">
+  <!-- JS Reference !-->
+  <script src="myApp.js"></script>
 </head>
 
-<div id="wrapper">
+<body>
 
-  <body>
+  <div class="container">
+    <form>
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="John" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Smith" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email Address</label>
+        </div>
+        <div class="col-75">
+          <input type="email" id="email" name="mailid" placeholder="jsmith123@gmail.com" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Country</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country" required>
+            <option value="">Select country</option>
+            <option value="australia">Australia</option>
+            <option value="brazil">Brazil</option>
+            <option value="canada">Canada</option>
+            <option value="china">China</option>
+            <option value="france">France</option>
+            <option value="usa">USA</option>
+            <option value="russia">Russia</option>
+            <option value="japan">Japan</option>
+            <option value="india">India</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="feed_back">Rate our App</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject"
+            placeholder="Feel free to provide some feedback for us! Your feedback is taken into consideration."
+            style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="star-rating">
+        <input type="radio" name="stars" id="star-a" value="5" required />
+        <label for="star-a"></label>
 
-    <div class="hamburger">
-      <a href="menu.html">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </a>
-    </div>
+        <input type="radio" name="stars" id="star-b" value="4" />
+        <label for="star-b"></label>
 
-    <header class="main-info">
+        <input type="radio" name="stars" id="star-c" value="3" />
+        <label for="star-c"></label>
 
-      <div>
-        <h1> Chicago, IL </h1>
+        <input type="radio" name="stars" id="star-d" value="2" />
+        <label for="star-d"></label>
+
+        <input type="radio" name="stars" id="star-e" value="1" />
+        <label for="star-e"></label>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
       </div>
 
-      <div>
-        <h1>36 F</h1>
-      </div>
-
-    </header>
+    </form>
+  </div>
 
 
-    <div class="flex-container">
-      <div>
-        <h1>
-          24 HOUR FORECAST
-        </h1>
-      </div>
-      <div>
-        <h1>
-          WEEKLY FORECAST
-        </h1>
-      </div>
-      <div>
-        <h1>
-          SUN / MOON PRESENCE
-        </h1>
-      </div>
-
-      <!-- weather details -->
-      <div>
-        <h1>
-          CURRENT WEATHER DETAILS
-        </h1>
-      </div>
-
-      <!-- radar map -->
-      <div>
-        <h1>
-          WEATHER RADAR MAP
-        </h1>
-      </div>
-
-    </div> <!-- main contents end-->
-
-  </body>
-</div> <!-- wrapper end -->
+</body>
 
 <footer>
-  <p>&copy; 2022 Dev Team 4</p>
+  &copy; 2022 WeatherRadar - All Rights Reserved<br>
+  Dev Team 4
 </footer>
 
 </html>
