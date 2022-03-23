@@ -13,10 +13,12 @@
 
 <body>
 
+  <h2>Rate our App</h2>
+
   <div class="container">
     <form>
       <div class="row">
-        <div class="col-25">
+        <div class="heading">
           <label for="fname">First Name</label>
         </div>
         <div class="col-75">
@@ -24,7 +26,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-25">
+        <div class="heading">
           <label for="lname">Last Name</label>
         </div>
         <div class="col-75">
@@ -32,19 +34,25 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-25">
+        <div class="heading">
           <label for="email">Email Address</label>
         </div>
         <div class="col-75">
           <input type="email" id="email" name="mailid" placeholder="jsmith123@gmail.com" required>
         </div>
       </div>
+
       <div class="row">
-        <div class="col-25">
+
+        <div class="heading">
+
           <label for="country">Country</label>
+
         </div>
-        <div class="col-75">
+        <div>
+
           <select id="country" name="country" required>
+
             <option value="">Select country</option>
             <option value="australia">Australia</option>
             <option value="brazil">Brazil</option>
@@ -56,37 +64,50 @@
             <option value="japan">Japan</option>
             <option value="india">India</option>
             <option value="other">Other</option>
+
           </select>
+
         </div>
       </div>
+
       <div class="row">
-        <div class="col-25">
+
+        <div class="formTitle heading">
+
           <label for="feed_back">Rate our App</label>
+
+          <div class="star-rating">
+
+            <input type="radio" name="stars" id="star-a" value="5" required />
+            <label for="star-a"></label>
+
+            <input type="radio" name="stars" id="star-b" value="4" />
+            <label for="star-b"></label>
+
+            <input type="radio" name="stars" id="star-c" value="3" />
+            <label for="star-c"></label>
+
+            <input type="radio" name="stars" id="star-d" value="2" />
+            <label for="star-d"></label>
+
+            <input type="radio" name="stars" id="star-e" value="1" />
+            <label for="star-e"></label>
+
+          </div>
         </div>
-        <div class="col-75">
-          <textarea id="subject" name="subject"
-            placeholder="Feel free to provide some feedback for us! Your feedback is taken into consideration."
-            style="height:200px"></textarea>
+
+        <div class="formBox">
+
+          <textarea id="review" name="review"
+            placeholder="Provide some feedback for us! Your feedback is taken into consideration so we can improve our app."></textarea>
+
         </div>
       </div>
-      <div class="star-rating">
-        <input type="radio" name="stars" id="star-a" value="5" required />
-        <label for="star-a"></label>
 
-        <input type="radio" name="stars" id="star-b" value="4" />
-        <label for="star-b"></label>
-
-        <input type="radio" name="stars" id="star-c" value="3" />
-        <label for="star-c"></label>
-
-        <input type="radio" name="stars" id="star-d" value="2" />
-        <label for="star-d"></label>
-
-        <input type="radio" name="stars" id="star-e" value="1" />
-        <label for="star-e"></label>
-      </div>
       <div class="row">
+
         <input type="submit" value="Submit">
+
       </div>
 
     </form>
