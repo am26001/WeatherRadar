@@ -12,106 +12,121 @@
 </head>
 
 <body>
+  <div id="wrapper">
+    <!-- Burger Menu !-->
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
 
-  <h2>Rate our App</h2>
+    <!-- Burger Menu Links !-->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="temperatureunits.html">Temperature Units</a>
+      <a href="language.html">Language</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="about.html">About</a>
+    </div>
+    <h1>Rate our App</h1>
 
-  <div class="container">
-    <form>
-      <div class="row">
-        <div class="heading">
-          <label for="fname">First Name</label>
+    <div class="container" id = "change">
+
+      <form> 
+        <div class="row">
+          <div class="heading">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="John" required>
+          </div>
         </div>
-        <div class="col-75">
-          <input type="text" id="fname" name="firstname" placeholder="John" required>
+        <div class="row">
+          <div class="heading">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Smith" required>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="heading">
-          <label for="lname">Last Name</label>
+        <div class="row">
+          <div class="heading">
+            <label for="email">Email Address</label>
+          </div>
+          <div class="col-75">
+            <input type="email" id="email" name="mailid" placeholder="jsmith123@gmail.com" required>
+          </div>
         </div>
-        <div class="col-75">
-          <input type="text" id="lname" name="lastname" placeholder="Smith" required>
-        </div>
-      </div>
-      <div class="row">
-        <div class="heading">
-          <label for="email">Email Address</label>
-        </div>
-        <div class="col-75">
-          <input type="email" id="email" name="mailid" placeholder="jsmith123@gmail.com" required>
-        </div>
-      </div>
 
-      <div class="row">
+        <div class="row">
 
-        <div class="heading">
+          <div class="heading">
 
-          <label for="country">Country</label>
+            <label for="country">Country</label>
 
-        </div>
-        <div>
+          </div>
+          <div>
 
-          <select id="country" name="country" required>
+            <select id="country" name="country" required>
 
-            <option value="">Select country</option>
-            <option value="australia">Australia</option>
-            <option value="brazil">Brazil</option>
-            <option value="canada">Canada</option>
-            <option value="china">China</option>
-            <option value="france">France</option>
-            <option value="usa">USA</option>
-            <option value="russia">Russia</option>
-            <option value="japan">Japan</option>
-            <option value="india">India</option>
-            <option value="other">Other</option>
+              <option value="">Select country</option>
+              <option value="australia">Australia</option>
+              <option value="brazil">Brazil</option>
+              <option value="canada">Canada</option>
+              <option value="china">China</option>
+              <option value="france">France</option>
+              <option value="usa">USA</option>
+              <option value="russia">Russia</option>
+              <option value="japan">Japan</option>
+              <option value="india">India</option>
+              <option value="other">Other</option>
 
-          </select>
-
-        </div>
-      </div>
-
-      <div class="row">
-
-        <div class="formTitle heading">
-
-          <label for="feed_back">Rate our App</label>
-
-          <div class="star-rating">
-
-            <input type="radio" name="stars" id="star-a" value="5" required />
-            <label for="star-a"></label>
-
-            <input type="radio" name="stars" id="star-b" value="4" />
-            <label for="star-b"></label>
-
-            <input type="radio" name="stars" id="star-c" value="3" />
-            <label for="star-c"></label>
-
-            <input type="radio" name="stars" id="star-d" value="2" />
-            <label for="star-d"></label>
-
-            <input type="radio" name="stars" id="star-e" value="1" />
-            <label for="star-e"></label>
+            </select>
 
           </div>
         </div>
 
-        <div class="formBox">
+        <div class="row">
 
-          <textarea id="review" name="review"
-            placeholder="Provide some feedback for us! Your feedback is taken into consideration so we can improve our app."></textarea>
+          <div class="formTitle heading">
+
+            <label for="feed_back">Rate our App</label>
+
+            <div class="star-rating">
+
+              <input type="radio" name="stars" id="star-a" value="5" required />
+              <label for="star-a"></label>
+
+              <input type="radio" name="stars" id="star-b" value="4" />
+              <label for="star-b"></label>
+
+              <input type="radio" name="stars" id="star-c" value="3" />
+              <label for="star-c"></label>
+
+              <input type="radio" name="stars" id="star-d" value="2" />
+              <label for="star-d"></label>
+
+              <input type="radio" name="stars" id="star-e" value="1" />
+              <label for="star-e"></label>
+
+            </div>
+          </div>
+
+          <div class="formBox">
+
+            <textarea id="review" name="review"
+              placeholder="Provide some feedback for us! Your feedback is taken into consideration so we can improve our app."></textarea>
+
+          </div>
+        </div>
+
+        <div class="row">
+
+          <input type="submit" value="Submit">
 
         </div>
-      </div>
 
-      <div class="row">
-
-        <input type="submit" value="Submit">
-
-      </div>
-
-    </form>
-  </div>
+      </form>
+    </div>
 
 
 </body>
