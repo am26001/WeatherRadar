@@ -28,6 +28,7 @@
   padding: 0px;
 }
 
+/* body design */
 body {
   font-family: "Lato", sans-serif;
   transition: background-color .5s;
@@ -70,6 +71,7 @@ footer {
   color: #f1f1f1;
 }
 
+/* burger menu close button design */
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -78,11 +80,13 @@ footer {
   margin-left: 50px;
 }
 
+/* design of burger menu div */
 #main {
   transition: margin-left .5s;
   padding: 16px;
 }
 
+/* can omit? */
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
@@ -92,8 +96,6 @@ footer {
     font-size: 18px;
   }
 }
-
-
 
 /* rate our app form */
 * {
@@ -234,10 +236,35 @@ input[type=submit]:hover {
   font-size: 1em;
 }
 
-/* can omit */
+/* can omit? */
 @-moz-document url-prefix() {
   .star-rating input:checked~label:before {
     font-size: 36px;
     line-height: 21px;
   }
-} 
+}
+
+/* design of about container */
+.aboutContainer {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* icon size */
+#aboutIcon {
+  width: 128px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+/* content size */
+#aboutContent {
+  text-align: center;
+  line-height: 55px;
+  margin-bottom: 30px;
+  font-size: 25px;
+}

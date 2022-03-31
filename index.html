@@ -3,26 +3,27 @@
 <meta charset=UTF-8”>
 
 <head>
-  <title>Home</title>
+  <title>WeatherRadar Home</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <!-- CSS Reference !-->
   <link rel="stylesheet" href="myApp.css">
   <!-- JS Reference !-->
   <script src="myApp.js"></script>
+  <!-- Tab Icon !-->
+  <link rel="icon" href="icon.png">
 </head>
 
-<!-- Wrapper !-->
-<div id="wrapper">
-
-  <body>
+<body>
+  <!-- Wrapper !-->
+  <div id="wrapper">
     <!-- Burger Menu !-->
     <div id="main">
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <span style="font-size:30px;cursor:pointer" onclick="openBurgerMenu()">&#9776;</span>
     </div>
 
     <!-- Burger Menu Links !-->
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeBurgerMenu()">&times;</a>
       <a href="temperatureunits.html">Temperature Units</a>
       <a href="language.html">Language</a>
       <a href="faqs.html">FAQs</a>
@@ -40,7 +41,6 @@
       </div>
 
     </header>
-
 
     <div class="flex-container">
       <div>
@@ -75,8 +75,10 @@
 
     </div> <!-- main contents end-->
 
-  </body>
-</div> <!-- wrapper end -->
+    <!-- End Wrapper -->
+  </div>
+</body>
+
 
 <footer>
   &copy; 2022 WeatherRadar - All Rights Reserved<br>

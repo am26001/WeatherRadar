@@ -3,28 +3,51 @@
 <meta charset=UTF-8”>
 
 <head>
-  <title>About</title>
+  <title>WeatherRadar About</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <!-- CSS Reference !-->
   <link rel="stylesheet" href="myApp.css">
   <!-- JS Reference !-->
   <script src="myApp.js"></script>
+  <!-- Tab Icon !-->
+  <link rel="icon" href="icon.png">
 </head>
 
-<!-- Burger Menu !-->
-<div id="main">
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-</div>
+<body>
+  <!-- Wrapper !-->
+  <div id="wrapper">
+    <!-- Burger Menu !-->
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openBurgerMenu()">&#9776;</span>
+    </div>
 
-<!-- Burger Menu Links !-->
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">Home</a>
-  <a href="temperatureunits.html">Temperature Units</a>
-  <a href="faqs.html">FAQs</a>
-  <a href="rateourapp.html">Rate Our App</a>
-</div>
+    <!-- Burger Menu Links !-->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeBurgerMenu()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="temperatureunits.html">Temperature Units</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="rateourapp.html">Rate Our App</a>
+    </div>
 
+    <h1>About</h1>
+
+    <div class="aboutContainer" id="change">
+
+      <!-- Icon from https://www.iconfinder.com/weather-icons?price=free -->
+      <img id="aboutIcon" src="aboutIcon.png" alt="WeatherRadar Icon">
+
+      <p id="aboutContent">
+        WeatherRadar<br>
+        Current build: <i>v1.0.0</i><br>
+        Developed by Dev Team 4
+      </p>
+
+    </div>
+
+    <!-- End Wrapper !-->
+  </div>
+</body>
 
 <footer>
   <p>&copy; 2022 Dev Team 4</p>
