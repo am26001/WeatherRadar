@@ -80,6 +80,48 @@ footer {
   margin-left: 50px;
 }
 
+/* design of search bar */
+form.submitBar input[type=text] {
+  float: right;
+  padding: 10px;
+  font-size: 17px;
+  border: 5px solid black;
+  border-radius: 25px;
+  border-style: inset;
+  width: 30%;
+  background: white;
+  margin-top: -52px;
+  margin-right: 75px;
+  margin-bottom: 50px;
+}
+
+/* design of submit button */
+form.submitBar button {
+  float: right;
+  width: 5%;
+  padding: 10px;
+  margin-left: 100px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 5px solid black;
+  border-radius: 25px;
+  border-style: inset;
+  margin-top: -52px;
+}
+
+/* submit button animation */
+form.submitBar button:hover {
+  background: #0b7dda;
+}
+
+/* clear floats */
+form.submitBar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* design of burger menu div */
 #main {
   transition: margin-left .5s;
