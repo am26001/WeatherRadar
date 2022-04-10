@@ -68,6 +68,10 @@ let weather = {
     const { temp, humidity } = data.main;
     const { speed } = data.wind;
     console.log(name,icon,description,temp,humidity,speed);
-    document.querySelector(".homeData").innerHTML = name;
+    document.querySelector(".location").innerHTML = name;
+    document.querySelector(".degrees").innerHTML = temp + " °C";
+    document.querySelector(".imageDescription").src = 
+        "http://openweathermap.org/img/wn/" + icon + ".png";
+        document.querySelector(".wordDescription").innerText = description;
   }
 }
