@@ -43,20 +43,27 @@ function closeBurgerMenu() {
 
 /* API Doc: 
 https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key} 
-city name = Denver, API key = 5b2929df6ca27ae27113782edc1615c4 */
+city name = Denver, API key = 5b2929df6ca27ae27113782edc1615c4 
+
+"Temperature is available in Fahrenheit, Celsius and Kelvin units.
+For temperature in Fahrenheit use units=imperial
+For temperature in Celsius use units=metric
+Temperature in Kelvin is used by default, no need to use units parameter in API call"
+
+*/
 let weather = {
   apiKey: "5b2929df6ca27ae27113782edc1615c4",
   fetchWeather: function (city) {
     fetch(
       "https://api.openweathermap.org/data/2.5/weather?q=" +
         city +
-        "&units=metric&appid=" +
+        "&units=imperial&appid=" +
         this.apiKey
     )
       .then((response) => {
         if (!response.ok) {
-          alert("No weather found.");
-          throw new Error("No weather found.");
+          alert("No weather found for location, try again.");
+          throw new Error("No weather found for location, try again.");
         }
         return response.json();
       })
@@ -67,11 +74,30 @@ let weather = {
     const { icon, description } = data.weather[0];
     const { temp, humidity } = data.main;
     const { speed } = data.wind;
-    console.log(name,icon,description,temp,humidity,speed);
+   //console.log(name,icon,description,temp,humidity,speed);
     document.querySelector(".location").innerHTML = name;
-    document.querySelector(".degrees").innerHTML = temp + " °C";
+    document.querySelector(".degrees").innerHTML = temp + " °F";
     document.querySelector(".imageDescription").src = 
         "http://openweathermap.org/img/wn/" + icon + ".png";
-        document.querySelector(".wordDescription").innerText = description;
+    document.querySelector(".wordDescription").innerText = description;
+    document.querySelector(".weather").classList.remove("loading");
+    // get location images from https://unsplash.com/developers
+    document.querySelector("#wrapper").style.backgroundImage =  "url('https://source.unsplash.com/1600x900/?" + name + "')";
+  },
+  search: function () {
+    this.fetchWeather(document.querySelector(".search-bar").value);
+  },
+};
+
+document.querySelector(".submitBar button").addEventListener("click", function () {
+  weather.search();
+});
+
+document.querySelector(".search-bar").addEventListener("keyup", function(event) {
+  if(event.key == "Enter") {
+    weather.search();
   }
-}
+});
+
+// once page has loaded, make Denver default location
+weather.fetchWeather("Chicago");

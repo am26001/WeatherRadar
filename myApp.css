@@ -1,9 +1,24 @@
+/* load page */
+.weather.loading {
+  visibility: hidden;
+}
+
+/* once loaded */
+.weather.loading:after {
+  visibility: visible;
+  content: "Fetching Data...";
+  color: black;
+  font-size: 26px;
+}
+
 /* location data design */
 .location {
   text-align: center;
   border: 5px solid black;
   border-radius: 25px;
   border-style: inset;
+  background: #222222d0;
+  color: white;
 }
 
 /* degrees data design */
@@ -12,6 +27,8 @@
   border: 5px solid black;
   border-radius: 25px;
   border-style: inset;
+  background: #222222d0;
+  color: white;
 }
 
 /* description container data design */
@@ -21,6 +38,8 @@
   border-radius: 25px;
   border-style: inset;
   margin-bottom: 20px;
+  background: #222222d0;
+  color: white;
 }
 
 /* image description size */
@@ -45,8 +64,9 @@
   border: 5px solid black;
   border-radius: 25px;
   border-style: inset;
+  background: #222222d0;
+  color: white;
 }
-
 
 /* weekly forecast data design */
 .weeklyCast {
@@ -54,8 +74,9 @@
   border: 5px solid black;
   border-radius: 25px;
   border-style: inset;
+  background: #222222d0;
+  color: white;
 }
-
 
 /* sun & moon presence data design */
 .planetPresence {
@@ -63,6 +84,8 @@
   border: 5px solid black;
   border-radius: 25px;
   border-style: inset;
+  background: #222222d0;
+  color: white;
 }
 
 /* current forecast data design */
@@ -71,6 +94,8 @@
   border: 5px solid black;
   border-radius: 25px;
   border-style: inset;
+  background: #222222d0;
+  color: white;
 }
 
 /* weather map data design */
@@ -79,6 +104,8 @@
   border: 5px solid black;
   border-radius: 25px;
   border-style: inset;
+  background: #222222d0;
+  color: white;
 }
 
 /* current location design */
@@ -94,6 +121,7 @@
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
 }
 
 /* space for each section */
@@ -105,8 +133,8 @@
 
 /* body design */
 body {
-  font-family: "Lato", sans-serif;
-  transition: background-color .5s;
+  font-family: "Lato", "Times New Roman", Times, serif;
+  transition: 750ms linear;
 }
 
 /* footer design */
@@ -156,42 +184,49 @@ footer {
 }
 
 /* design of search bar */
-form.submitBar input[type=text] {
+div.submitBar input[type=text] {
   float: right;
-  padding: 10px;
   font-size: 17px;
   border: 5px solid black;
   border-radius: 25px;
   border-style: inset;
   width: 30%;
-  background: white;
   margin-top: -52px;
-  margin-right: 75px;
+  margin-right: 80px;
   margin-bottom: 50px;
+  background: #222222d0;
+  color: white;
+  outline: none;
 }
 
 /* design of submit button */
-form.submitBar button {
+div.submitBar button {
   float: right;
-  width: 5%;
-  padding: 10px;
-  margin-left: 100px;
   background: #2196F3;
   color: white;
   font-size: 17px;
   border: 5px solid black;
   border-radius: 25px;
-  border-style: inset;
+  width: 5%;
+  height: 50px;
   margin-top: -52px;
+  background: #222222d0;
+  color: white;
 }
 
 /* submit button animation */
-form.submitBar button:hover {
-  background: #0b7dda;
+div.submitBar button:hover {
+  background: #7c7c7c6b;
+}
+
+/* placeholder text design */
+::placeholder {
+  font-family: "Lato", "Times New Roman", Times, serif;
+  color: white;
 }
 
 /* clear floats */
-form.submitBar::after {
+div.submitBar::after {
   content: "";
   clear: both;
   display: table;
@@ -201,6 +236,12 @@ form.submitBar::after {
 #main {
   transition: margin-left .5s;
   padding: 16px;
+  color: #222222d0;
+}
+
+/* design of burger menu div animation */
+span:hover {
+  color: #7c7c7c6b;
 }
 
 /* can omit? */
