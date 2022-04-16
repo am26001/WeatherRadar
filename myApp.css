@@ -116,12 +116,17 @@
   margin-right: auto;
 }
 
-/* wrapper size for overall page content*/
+/* wrapper size for overall page content */
 #wrapper {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
   background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  /* max dimension for images */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
 /* space for each section */
@@ -192,7 +197,7 @@ div.submitBar input[type=text] {
   border-style: inset;
   width: 30%;
   margin-top: -52px;
-  margin-right: 80px;
+  margin-right: 100px;
   margin-bottom: 50px;
   background: #222222d0;
   color: white;
@@ -212,6 +217,7 @@ div.submitBar button {
   margin-top: -52px;
   background: #222222d0;
   color: white;
+  margin-right: 15px;
 }
 
 /* submit button animation */
@@ -242,6 +248,11 @@ div.submitBar::after {
 /* design of burger menu div animation */
 span:hover {
   color: #7c7c7c6b;
+}
+
+/* design of burger menu div background */
+span {
+  background-color: white;
 }
 
 /* can omit? */
@@ -425,4 +436,9 @@ input[type=submit]:hover {
   line-height: 55px;
   margin-bottom: 30px;
   font-size: 25px;
+}
+
+.map {
+  width: 100%;
+  height: 50vh;
 }
