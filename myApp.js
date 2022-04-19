@@ -72,9 +72,8 @@ let weather = {
   displayWeather: function (data) {
     const { name } = data;
     const { icon, description } = data.weather[0];
-    const { temp, humidity } = data.main;
-    const { speed } = data.wind;
-   //console.log(name,icon,description,temp,humidity,speed);
+    const { temp, feels_like, temp_min, temp_max, pressure, humidity } = data.main;
+    const { speed, deg } = data.wind;
     document.querySelector(".location").innerHTML = name;
     document.querySelector(".degrees").innerHTML = temp + " °F";
     document.querySelector(".imageDescription").src = 
@@ -83,6 +82,16 @@ let weather = {
     document.querySelector(".weather").classList.remove("loading");
     // get location images from https://unsplash.com/developers
     document.querySelector("#wrapper").style.backgroundImage =  "url('https://source.unsplash.com/1600x900/?" + name + "')";
+    document.querySelector(".currTemp").innerHTML = temp + " °F ";
+    document.querySelector(".currFeelsLike").innerHTML = feels_like + " °F";
+    document.querySelector(".currTempMin").innerHTML = temp_min + " °F";
+    document.querySelector(".currTempMax").innerHTML = temp_max + " °F";
+    document.querySelector(".currPressure").innerHTML = pressure + " hPa";
+    document.querySelector(".currHumidity").innerHTML = humidity + " %";
+    document.querySelector(".currWindSpeed").innerHTML = speed + " mph";
+    document.querySelector(".currWindDirection").innerHTML = deg + " °";
+    
+
   },
   search: function () {
     this.fetchWeather(document.querySelector(".search-bar").value);

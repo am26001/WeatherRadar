@@ -68,6 +68,24 @@
   color: white;
 }
 
+/* 24 hr forecast data container design */
+.twentyFourCastContainer {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+/* 24 hr forecast weather data design */
+.twentyFourCastData {
+  width: 85%;
+  height: 45vh;
+  border: 3px solid black;
+  border-radius: 25px;
+  border-style: inset;
+  margin-left: auto;
+  margin-right: auto;
+  background: #222222d0;
+}
+
 /* weekly forecast data design */
 .weeklyCast {
   text-align: center;
@@ -76,6 +94,12 @@
   border-style: inset;
   background: #222222d0;
   color: white;
+}
+
+/* weekly forecast data container design */
+.weeklyCastContainer {
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 /* sun & moon presence data design */
@@ -88,6 +112,12 @@
   color: white;
 }
 
+/* sun & moon presence data container design */
+.planetPresenceContainer {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 /* current forecast data design */
 .currentCast {
   text-align: center;
@@ -98,6 +128,178 @@
   color: white;
 }
 
+/* current forecast data container design */
+.currentCastContainer {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+/* current forecast weather data design */
+.currentCastData {
+  width: 85%;
+  height: 45vh;
+  border: 3px solid black;
+  border-radius: 25px;
+  border-style: inset;
+  margin-left: auto;
+  margin-right: auto;
+  background: #222222d0;
+  font-family: "Lato", "Times New Roman", Times, serif;
+  color: red;
+}
+
+/* current forecast weather data design
+
+  label (1)
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 100px;
+
+  data (1)
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+
+  label (2)
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 400px;
+
+  data (2)
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+
+*/
+.currTempLabel {
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 100px;
+}
+
+.currTemp {
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feelsLikeLabel {
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 400px;
+}
+
+.currFeelsLike {
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tempMinLabel {
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 100px;
+}
+
+.currTempMin {
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tempMaxLabel {
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 300px;
+}
+
+.currTempMax {
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pressureLabel {
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 100px;
+}
+
+.currPressure {
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.humidityLabel {
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 300px;
+}
+
+.currHumidity {
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.windSpeedLabel {
+  color: white;
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 114px;
+}
+
+.currWindSpeed {
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.windDirectionLabel {
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 300px;
+}
+
+.currWindDirection {
+  color: white;
+  color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 /* weather map data design */
 .weatherMap {
   text-align: center;
@@ -106,6 +308,25 @@
   border-style: inset;
   background: #222222d0;
   color: white;
+}
+
+/* weather map data container design */
+.weatherMapContainer {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+/* map design */
+.map {
+  width: 85%;
+  height: 45vh;
+  border: 3px solid black;
+  border-radius: 25px;
+  border-style: inset;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #222222d0;
 }
 
 /* current location design */
@@ -436,9 +657,4 @@ input[type=submit]:hover {
   line-height: 55px;
   margin-bottom: 30px;
   font-size: 25px;
-}
-
-.map {
-  width: 100%;
-  height: 50vh;
 }

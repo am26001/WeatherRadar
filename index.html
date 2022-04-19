@@ -57,13 +57,13 @@
 
       <!-- temperature details -->
       <div>
-        <h1 class="degrees">48 °F </h1>
+        <h1 class="degrees">48 °F</h1>
       </div>
 
       <!-- image & word description -->
       <div class=descriptionContainer>
         <h1>
-          <img src="sunny.png" alt="" class="imageDescription" />
+          <img src="sunny.png" alt="Sunny logo" class="imageDescription" />
         </h1>
 
         <h1 class="wordDescription">
@@ -75,41 +75,70 @@
     <div class="flex-container">
 
       <!-- 24hr details -->
-      <div>
+      <div class="twentyFourCastContainer">
         <h1 class="twentyFourCast">
           24 HOUR FORECAST
         </h1>
+        <div class="twentyFourCastData">
+          dwanuwdandjwa
+        </div>
       </div>
 
       <!-- weekly details -->
-      <div>
+      <div class="weeklyCastContainer">
         <h1 class="weeklyCast">
           WEEKLY FORECAST
         </h1>
       </div>
 
       <!-- planet details -->
-      <div>
+      <div class="planetPresenceContainer">
         <h1 class="planetPresence">
           SUN / MOON PRESENCE
         </h1>
       </div>
 
       <!-- weather details -->
-      <div>
+      <div class="currentCastContainer">
         <h1 class="currentCast">
           CURRENT WEATHER DETAILS
         </h1>
+        <div class="currentCastData">
+          <p class="currTempLabel">Temperature:</p>
+          <p class="currTemp"> </p>
+          <p class="feelsLikeLabel">Feels Like:</p>
+          <p class="currFeelsLike"></p>
+          <p class="tempMinLabel">Minimum Temperature:</p>
+          <p class="currTempMin"></p>
+          <p class="tempMaxLabel">Maximum Temperature:</p>
+          <p class="currTempMax"></p>
+          <p class="pressureLabel">Atmospheric Pressure:</p>
+          <p class="currPressure"></p>
+          <p class="humidityLabel">Humidity:</p>
+          <p class="currHumidity"></p>
+          <p class="windSpeedLabel">Wind Speed:</p>
+          <p class="currWindSpeed"></p>
+          <p class="windDirectionLabel">Wind Direction:</p>
+          <p class="currWindDirection"></p>
+        </div>
       </div>
 
       <!-- map details -->
-      <div>
+      <div class="weatherMapContainer">
         <h1 class="weatherMap">
           WEATHER RADAR MAP
         </h1>
       </div>
-      <!-- IFRAME DOC: https://oskar.idashboards.com/hc/en-us/articles/360043258671-iFrame-Panel-Weather-Panel -->
-      <iframe
+      <!-- IFRAME DOC: https://oskar.idashboards.com/hc/en-us/articles/360043258671-iFrame-Panel-Weather-Panel
+
+      "To begin go to https://www.windy.com/
+      In the Search Location field enter your city
+      At this point to you can zoom in or out to your desired elevation
+      Next use the controls on the upper right to select what type of map and weather conditions you'd like to display
+      Once you've customized your map to your liking, click the hamburger button in the upper left corner and select Embed Widget on page"
+      
+      -->
+      <iframe class="map"
         src="https://embed.windy.com/embed2.html?lat=41.408&lon=-87.624&detailLat=41.408&detailLon=-87.624&width=650&height=450&zoom=8&level=surface
         &overlay=temp&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1"
         frameborder="0"></iframe>
