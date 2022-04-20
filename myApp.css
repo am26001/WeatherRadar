@@ -137,7 +137,7 @@
 /* current forecast weather data design */
 .currentCastData {
   width: 85%;
-  height: 45vh;
+  height: 30vh;
   border: 3px solid black;
   border-radius: 25px;
   border-style: inset;
@@ -145,160 +145,55 @@
   margin-right: auto;
   background: #222222d0;
   font-family: "Lato", "Times New Roman", Times, serif;
-  color: red;
-}
-
-/* current forecast weather data design
-
-  label (1)
-  color: white;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: 100px;
-
-  data (1)
-  color: white;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-
-  label (2)
-  color: white;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: 400px;
-
-  data (2)
-  color: white;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-
-*/
-.currTempLabel {
-  color: white;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: 100px;
+  padding-top: 80px;
 }
 
 .currTemp {
   color: white;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.feelsLikeLabel {
-  color: white;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: 400px;
 }
 
 .currFeelsLike {
   color: white;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.tempMinLabel {
-  color: white;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: 100px;
 }
 
 .currTempMin {
   color: white;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.tempMaxLabel {
-  color: white;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: 300px;
 }
 
 .currTempMax {
   color: white;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.pressureLabel {
-  color: white;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: 100px;
 }
 
 .currPressure {
   color: white;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.humidityLabel {
-  color: white;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: 300px;
 }
 
 .currHumidity {
   color: white;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.windSpeedLabel {
-  color: white;
-  color: white;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: 114px;
 }
 
 .currWindSpeed {
   color: white;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.windDirectionLabel {
-  color: white;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: 300px;
 }
 
 .currWindDirection {
   color: white;
-  color: white;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
+table,
+tr,
+td,
+thead,
+tbody {
+  display: block;
+}
+
+tr {
+  float: left;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 50px;
+}
 
 /* weather map data design */
 .weatherMap {
@@ -342,7 +237,6 @@
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  background-image: url('https://source.unsplash.com/1600x900/?landscape');
   /* max dimension for images */
   background-position: center;
   background-repeat: no-repeat;
@@ -492,6 +386,35 @@ span {
   box-sizing: border-box;
 }
 
+/* text design of placeholder */
+::placeholder {
+  color: #9e9e9e;
+  font-family: 'Lato', 'Times New Roman', Times, serif;
+  font-size: 1em;
+}
+
+/* drop down list design for first*/
+select {
+  color: #9e9e9e;
+  font-family: 'Lato', 'Times New Roman', Times, serif;
+  font-size: 1em;
+}
+
+/* drop down list design for rest */
+option:not(:first-of-type) {
+  color: black;
+  font-family: 'Lato', 'Times New Roman', Times, serif;
+  font-size: 1em;
+}
+
+/* input design */
+textarea:focus,
+input:focus {
+  color: black;
+  font-family: 'Lato', 'Times New Roman', Times, serif;
+  font-size: 1em;
+}
+
 /* input field design & text */
 input[type=text],
 select,
@@ -501,6 +424,7 @@ textarea {
   border: 1px solid black;
   border-radius: 10px;
   resize: vertical;
+  font-size: 1em;
 }
 
 /* input field design & email */
@@ -512,6 +436,7 @@ textarea {
   border: 1px solid black;
   border-radius: 10px;
   resize: vertical;
+  font-size: 1em;
 }
 
 /* form titles */
@@ -589,7 +514,7 @@ input[type=submit]:hover {
 .star-rating>label {
   width: 30px;
   height: 30px;
-  font-family: Arial;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 35px;
   transition: 0.5s ease;
   color: orange;
@@ -622,7 +547,7 @@ input[type=submit]:hover {
 /* design of review box*/
 #review {
   height: 250px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Lato', 'Times New Roman', Times, serif;
   font-size: 1em;
 }
 

@@ -82,14 +82,14 @@ let weather = {
     document.querySelector(".weather").classList.remove("loading");
     // get location images from https://unsplash.com/developers
     document.querySelector("#wrapper").style.backgroundImage =  "url('https://source.unsplash.com/1600x900/?" + name + "')";
-    document.querySelector(".currTemp").innerHTML = temp + " °F ";
-    document.querySelector(".currFeelsLike").innerHTML = feels_like + " °F";
-    document.querySelector(".currTempMin").innerHTML = temp_min + " °F";
-    document.querySelector(".currTempMax").innerHTML = temp_max + " °F";
-    document.querySelector(".currPressure").innerHTML = pressure + " hPa";
-    document.querySelector(".currHumidity").innerHTML = humidity + " %";
-    document.querySelector(".currWindSpeed").innerHTML = speed + " mph";
-    document.querySelector(".currWindDirection").innerHTML = deg + " °";
+    document.querySelector(".currTemp").innerHTML = "Temperature: " + temp + " °F ";
+    document.querySelector(".currFeelsLike").innerHTML = "Feels Like: " + feels_like + " °F";
+    document.querySelector(".currTempMin").innerHTML = "Minimum Temperature: " + temp_min + " °F";
+    document.querySelector(".currTempMax").innerHTML = "Maximum Temperature: " + temp_max + " °F";
+    document.querySelector(".currPressure").innerHTML = "Atmospheric Pressure: " + pressure + " hPa";
+    document.querySelector(".currHumidity").innerHTML = "Humidity: " + humidity + " %";
+    document.querySelector(".currWindSpeed").innerHTML = "Wind Speed: " + speed + " mph";
+    document.querySelector(".currWindDirection").innerHTML = "Wind direction: " + deg + " °";
     
 
   },
