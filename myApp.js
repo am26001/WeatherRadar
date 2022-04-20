@@ -74,6 +74,7 @@ let weather = {
     const { icon, description } = data.weather[0];
     const { temp, feels_like, temp_min, temp_max, pressure, humidity } = data.main;
     const { speed, deg } = data.wind;
+    const { tempHr } = data.main.temp;
     document.querySelector(".location").innerHTML = name;
     document.querySelector(".degrees").innerHTML = temp + " °F";
     document.querySelector(".imageDescription").src = 
@@ -90,7 +91,9 @@ let weather = {
     document.querySelector(".currHumidity").innerHTML = "Humidity: " + humidity + " %";
     document.querySelector(".currWindSpeed").innerHTML = "Wind Speed: " + speed + " mph";
     document.querySelector(".currWindDirection").innerHTML = "Wind direction: " + deg + " °";
-    
+
+ document.querySelector(".hr").innerHTML = "1hr: " + tempHr;
+
 
   },
   search: function () {

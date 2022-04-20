@@ -193,6 +193,12 @@ tr {
   width: 50%;
   text-align: center;
   margin-bottom: 50px;
+  margin-top: -5px;
+}
+
+.hr {
+  color: white;
+  text-align: center;
 }
 
 /* weather map data design */
