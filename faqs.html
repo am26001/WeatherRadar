@@ -8,6 +8,7 @@
   <!-- CSS Reference !-->
   <link rel="stylesheet" href="myApp.css">
   <!-- JS Reference !-->
+  <script src="http://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
   <script src="myApp.js"></script>
   <!-- Tab Icon !-->
   <link rel="icon" href="icon.png">
@@ -29,10 +30,95 @@
       <a href="about.html">About</a>
     </div>
 
-    <h1>Frequently Asked Questions</h1>
+    <div class="container" id="change">
 
-    <!-- End Wrapper !-->
-  </div>
+      <h1>Frequently Asked Questions</h1>
+      <ul id="faq_rollovers">
+        <li>
+          <!-- q -->
+          <h2>Can I Rely on your Forecast?</h2>
+          <!-- a -->
+          <p>Yes! Our weather uses an application programming interface (API) which grabs information from another
+            website. Our weather forecast comes from <a href="https://openweathermap.org/">OpenWeather</a>
+            and our weather radar map comes from <a href="https://www.windy.com/?41.779,-87.779,5">Windy</a>. The
+            forecast that is shown is live. The weather radar map can report future forecast by editing what is being
+            displayed on screen.</p>
+        </li>
+        <li>
+          <!-- q -->
+          <h2>How can I see the Forecast for a Different Location?</h2>
+          <!-- a -->
+          <p>With our functional search bar located in the main page on the top right, enter your desired location to
+            retrieve the current forecast. After doing so, press the "Enter" key or click the search button to the right
+            of the search bar. This will update the main page, assuming you have internet connection. Please note that
+            the default location is set to "Chicago".</p>
+        </li>
+        <li>
+          <!-- q -->
+          <h2>What does the Current Weather Details Results Report?</h2>
+          <!-- a -->
+          <p>The current weather details show the meteorological conditions of the location that is entered. The
+            meteorological conditions reveal the current environmental conditions which can impact the weather. This
+            includes the actual temperature, feels like temperature, its low and high, the atmospheric pressure,
+            humidity, wind direction, and wind speed.</p>
+        </li>
+        <li>
+          <!-- q -->
+          <h2>What does the Atmospheric Pressure Results Report?</h2>
+          <!-- a -->
+          <p>Atmospheric pressure is the force per unit of area applied on the Earth’s surface. It is simply how strong
+            the wind is since it can either exert a lot of pressure or a low amount. Our atmospheric pressure is
+            displayed with hPa units. Hectopascal (hPa) is a metric measurement unit of pressure.</p>
+        </li>
+        <li>
+          <!-- q -->
+          <h2>What is Classified as High Atmospheric Pressure?</h2>
+          <!-- a -->
+          <p>A barometric reading that is over 1022.7 hpa is considered to be high atmospheric pressure, which is
+            normally associated with clear skies and tranquil weather.</p>
+        </li>
+        <!-- q -->
+        <h2>What is Classified as Normal Atmospheric Pressure?</h2>
+        <!-- a -->
+        <p>A barometric reading that is between the range of 1009.2 and 1022.7 hpa is considered to be normal
+          atmospheric
+          pressure, which is normally
+          associated with steady weather.</p>
+        </li>
+        <!-- q -->
+        <h2>What is Classified as Low Atmospheric Pressure?</h2>
+        <!-- a -->
+        <p>A barometric reading that is below 1009.2 hpa is considered to be low
+          atmospheric
+          pressure, which is normally
+          associated with warm and rainy weather.</p>
+        </li>
+        <li>
+          <!-- q -->
+          <h2>What does the Humidity Results Report?</h2>
+          <!-- a -->
+          <p>Humidity measures the amount of water vapor that resides within the air. This can determine the amount of
+            moisture. The higher the temperature, the more water vapor the air. Low humidity can make the atmosphere
+            dry.</p>
+        </li>
+        <li>
+          <!-- q -->
+          <h2>How do I Read the Results for Wind Direction?</h2>
+          <!-- a -->
+          <p>The wind direction results are measured in degrees. Depending on the degrees it determines the direction
+            where the wind is blowing. The information below contains more details. Note that the cardinal directions
+            are your
+            typical directions listed on a <a
+              href="https://i.pinimg.com/736x/61/87/67/618767a83eac4fade619eabf10f3a62a.jpg">compass</a> that contains
+            the azimuth degrees, which are simply just the directions measured in degrees clockwise
+            starting from the north</p>
+        </li>
+      </ul>
+      <img src="Wind Direction.PNG" class="windDirection" alt="Wind Direction Usage">
+
+      </main>
+      <!-- End Wrapper !-->
+    </div>
 </body>
 
 <footer>

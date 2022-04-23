@@ -224,11 +224,12 @@ footer {
   margin-top: 50px;
   font-style: italic;
   text-align: center;
-  background-color: white;
+  background-color: #f2f2f2;
   font-family: 'Lato', 'Times New Roman', Times, serif;
   border-radius: 10px;
   padding-top: 3px;
   padding-bottom: 3px;
+  margin-bottom: 8px;
 }
 
 /* burger menu size */
@@ -343,7 +344,6 @@ span {
   transition: 0.5s;
 }
 
-/* can omit? */
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
@@ -592,4 +592,38 @@ input[type=submit]:hover {
   line-height: 55px;
   margin-bottom: 30px;
   font-size: 25px;
+}
+
+/* heading & unordered list design */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* heading design */
+h2 {
+  padding-top: 15px;
+}
+
+/* unordered list design */
+ul {
+  list-style-type: none;
+}
+
+/* faq link design */
+a:hover,
+a:focus,
+a:active {
+  transition: 0.5s;
+  color: #7c7c7c6b;
+  text-decoration: none;
+}
+
+/* wind direction table design */
+.windDirection {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  width: 55%;
+  padding-left: 0;
 }

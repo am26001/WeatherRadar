@@ -78,5 +78,5 @@ document.querySelector(".search-bar").addEventListener("keyup", function(event) 
   }
 });
 
-// once page has loaded, make Denver default location
+// once page has loaded, make Chicago default location
 weather.fetchWeather("Chicago");
