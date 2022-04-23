@@ -8,7 +8,7 @@ To access the WeatherRadar application live demo, click [here](https://www.loom.
 
 To access the WeatherRadar application, click [here](https://am26001.github.io/WeatherRadar/index.html).
 
-<div style="display: inline">[here](https://www.loom.com/share/ba0c45b6edd04bc69eab0699fb3c4f65)</div> 
+[here](https://www.loom.com/share/ba0c45b6edd04bc69eab0699fb3c4f65)
 
 
 ## Sources
