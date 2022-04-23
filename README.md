@@ -5,7 +5,7 @@ WeatherRadar Repository that does the following:
 
 This repository tracks the versions of the WeatherRadar application. Dev Team 4 will use this for Software Configuration Management and Version Control.
 
-To access the WeatherRadar application live demo, click [here](https://www.loom.com/share/95041fd6ec174956b9826cc273bc4fa7).
+To access the WeatherRadar application live demo, click [here](https://www.loom.com/share/95041fd6ec174956b9826cc273bc4fa7) or see the video below.
 
 https://user-images.githubusercontent.com/59444140/164875895-b856ac6b-a42c-4f2b-940e-5d395c5f8a10.mp4
 
