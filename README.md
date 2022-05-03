@@ -1,5 +1,16 @@
 # WeatherRadar
-## Dev Team 4: Azmi Barakat, Alan Martinez-Lopez, Joseph Villarrubia, Otto Zimmerman
+
+## Dev Team 4
+
+Azmi Barakat: Documentation
+
+Alan Martinez-Lopez: Programmer
+
+Joseph Villarrubia: Documentation
+
+Otto Zimmerman: Documentation
+
+## Description
 
 WeatherRadar Repository that does the following:
 
