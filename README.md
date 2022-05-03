@@ -14,7 +14,7 @@ Otto Zimmerman: Documentation
 
 WeatherRadar Repository that does the following:
 
-This repository tracks the versions of the WeatherRadar application. Dev Team 4 will use this for Software Configuration Management and Version Control.
+This repository tracks the versions of the WeatherRadar application. Dev Team 4 will use this for Software Configuration Management and Version Control. The application allows the user to enter a valid location and the current weather forecast is displayed.
 
 To access the WeatherRadar application demo, click [here](https://www.loom.com/share/6726861a7e03442684abaa1fff4424f9) or see the video below.
 
