@@ -26,3 +26,6 @@ To access the WeatherRadar application, click [here](https://am26001.github.io/W
 API provided by [OpenWeather](https://openweathermap.org/api).
 
 Map provided by [Windy](https://www.windy.com/41.876/-87.624?41.408,-87.624,8).
+
+## Known Issues
+Note that the WeatherRadar application was created on desktop with a display resolution of 2560 x 1440. If there is an issue with content being displayed (current weather details), try zooming in or out. Due to time constraints, the issue was not fixed during the development process.
