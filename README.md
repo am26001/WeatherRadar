@@ -22,6 +22,32 @@ https://user-images.githubusercontent.com/59444140/164949431-e17ce93b-b204-4a94-
 
 To access the WeatherRadar application, click [here](https://am26001.github.io/WeatherRadar/index.html).
 
+## Documents
+
+Note that the Software Requirements Specification document includes features that have been removed due to time constraints. Please see the Test Plan document for the live features.
+
+[Software Requirements Specification](https://github.com/am26001/WeatherRadar/files/8614288/Software.Requirement.Specification-1.docx)
+
+[Use Cases](https://user-images.githubusercontent.com/59444140/166566019-4dc339ea-1a36-46fd-8315-f21f5143b699.jpeg)
+
+[Component Level Diagram](https://github.com/am26001/WeatherRadar/files/8614297/Component.level.Diagram.2.pdf)
+
+[Three-Tier Architecture Diagram](https://github.com/am26001/WeatherRadar/files/8614300/Three-Tier.Architecture.3.pdf)
+
+[Data Flow Diagram](https://github.com/am26001/WeatherRadar/files/8614305/Data.Flow.Diagram.2.pdf)
+
+[Detail Design Scenarios](https://github.com/am26001/WeatherRadar/files/8614311/Detail.Design.Scenarios.pdf)
+
+[Sequence Diagram](https://github.com/am26001/WeatherRadar/files/8614313/Sequence.Diagram.pdf)
+
+[Class Diagram](https://github.com/am26001/WeatherRadar/files/8614314/Class.Diagram.pdf)
+
+[Agile User Stories](https://github.com/am26001/WeatherRadar/files/8614319/Agile.User.Stories.1.docx)
+
+[Agile Storyboard](https://github.com/am26001/WeatherRadar/files/8614321/Agile.Storyboard.xlsx)
+
+[Test Plan](https://github.com/am26001/WeatherRadar/files/8614329/Test.Plan-7.xlsx)
+
 ## Sources
 API provided by [OpenWeather](https://openweathermap.org/api).
 
