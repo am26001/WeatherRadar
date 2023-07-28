@@ -4,7 +4,7 @@
 
 Azmi Barakat: Documentation
 
-Alan Martinez-Lopez: Programmer
+Alan Martinez-Lopez: Programmer + Documentation
 
 Joseph Villarrubia: Documentation
 
